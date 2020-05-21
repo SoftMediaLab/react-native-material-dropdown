@@ -2,15 +2,15 @@ import { StyleSheet, Platform } from 'react-native';
 
 export default StyleSheet.create({
   accessory: {
-    width: 24,
-    height: 24,
+    width: 22,
+    height: 22,
     justifyContent: 'center',
     alignItems: 'center',
   },
 
   triangle: {
-    width: 14,
-    height: 14,
+    width: 12,
+    height: 12,
     transform: [{
       translateY: -7,
     }, {
@@ -19,8 +19,8 @@ export default StyleSheet.create({
   },
 
   triangleContainer: {
-    width: 18,
-    height: 12,
+    width: 16,
+    height: 10,
     overflow: 'hidden',
     alignItems: 'center',
 
