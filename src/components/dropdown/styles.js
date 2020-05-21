@@ -9,18 +9,18 @@ export default StyleSheet.create({
   },
 
   triangle: {
-    width: 8,
-    height: 8,
+    width: 14,
+    height: 14,
     transform: [{
-      translateY: -4,
+      translateY: -7,
     }, {
       rotate: '45deg',
     }],
   },
 
   triangleContainer: {
-    width: 12,
-    height: 6,
+    width: 18,
+    height: 12,
     overflow: 'hidden',
     alignItems: 'center',
 
