@@ -170,4 +170,13 @@ export interface RenderBaseProps extends DropDownProps {
  * React-native material dropdown component.
  * Material dropdown with consistent behaviour on iOS and Android
  */
-export class Dropdown extends React.PureComponent<DropDownProps> {}
+export class Dropdown extends React.PureComponent<DropDownProps> {
+  /*
+   * Acquire focus
+   */
+  focus(): void;
+  /*
+   * Release focus
+   */
+  blur(): void;
+}
