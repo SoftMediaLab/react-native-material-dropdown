@@ -106,9 +106,9 @@ export interface DropDownProps extends TouchableWithoutFeedbackProps {
   /** Render text field accessory (by default on rightSide) */
   renderAccessory?(): JSX.Element;
   /** Should text field accessory be on left side*/
-  renderLeftAccessory?(): JSX.Element | boolean;
-  /** Should text field accessory be on left side*/
-  renderRightAccessory?(): JSX.Element | boolean;;
+  renderLeftAccessory?:  boolean | React.ElementType;
+  /** Should text field accessory be on right side*/
+  renderRightAccessory?: boolean | React.ElementType;
 
 }
 
