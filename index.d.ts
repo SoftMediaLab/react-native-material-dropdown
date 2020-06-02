@@ -19,7 +19,7 @@ export interface DropDownProps extends TouchableWithoutFeedbackProps {
   /** Selected value */
   value?: string | number;
   /** Label to be shown for dropdown */
-  label?: string;
+  label?: React.ReactNode;
   /** Enable RTL layout */
   absoluteRTLLayout?: boolean;
   /** Provide Dropdown top-left position */

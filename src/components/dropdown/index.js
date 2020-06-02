@@ -158,7 +158,7 @@ export default class Dropdown extends PureComponent {
     renderLeftAccessory: PropTypes.func || PropTypes.bool,
     tintColor: PropTypes.string,  // TextField only
     lineWidth: PropTypes.string,  // TextField only
-    label: PropTypes.string
+    label: PropTypes.string // Textfield only
   };
 
   constructor(props) {
@@ -490,7 +490,6 @@ export default class Dropdown extends PureComponent {
       renderRightAccessory,
       renderLeftAccessory,
       renderAccessory = this.renderAccessory,
-      label
     } = this.props;
 
     let index = this.selectedIndex();
@@ -511,14 +510,11 @@ export default class Dropdown extends PureComponent {
     title = null == title || 'string' === typeof title?
       title:
       String(title);
-
+    const labelHeight = dropdownOffset.top - Platform.select({ ios: 1, android: 2 })
     return (
       <TextField
-        label={label}
-        labelHeight={dropdownOffset.top - Platform.select({ ios: 1, android: 2 })}
-
+        labelHeight={labelHeight}
         {...props}
-
         value={title}
         editable={false}
         onChangeText={undefined}
