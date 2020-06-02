@@ -117,7 +117,7 @@ export interface DropDownProps extends TouchableWithoutFeedbackProps {
  */
 export interface DropDownData {
   /** Value of item */
-  value: string;
+  value: string | number;
   /** Label to be shown */
   label?: string;
   /** Props for this item */
