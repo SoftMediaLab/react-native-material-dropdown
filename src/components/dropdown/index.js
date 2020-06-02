@@ -145,6 +145,8 @@ export default class Dropdown extends PureComponent {
 
     renderBase: PropTypes.func,
     renderAccessory: PropTypes.func,
+    renderRightAccessory: PropTypes.func,
+    renderLeftAccessory: PropTypes.func,
 
     containerStyle: (ViewPropTypes || View.propTypes).style,
     overlayStyle: (ViewPropTypes || View.propTypes).style,
