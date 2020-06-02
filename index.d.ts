@@ -80,6 +80,10 @@ export interface DropDownProps extends TouchableWithoutFeedbackProps {
   useNativeDriver?: boolean;
   /** Hitslop insets (default: { top: 6, right: 4, bottom: 6, left: 4 }) */
   hitSlop?: DropDownInsets;
+  /** Set textinput tintColor */
+  tintColor?: string;
+  /** Set textinput lineWidth */
+  lineWidth?: number;
 
   /** Value extractor function. Extract value from item. */
   valueExtractor?(item: DropDownData, index: number): string;
@@ -101,10 +105,11 @@ export interface DropDownProps extends TouchableWithoutFeedbackProps {
   renderBase?(props: RenderBaseProps): JSX.Element;
   /** Render text field accessory (by default on rightSide) */
   renderAccessory?(): JSX.Element;
-  /** Render text field accessory on left side*/
-  renderLeftAccessory?(): JSX.Element;
-  /** Render text field accessory on right side */
-  renderRightAccessory?(): JSX.Element;
+  /** Should text field accessory be on left side*/
+  renderLeftAccessory?(): JSX.Element | boolean;
+  /** Should text field accessory be on left side*/
+  renderRightAccessory?(): JSX.Element | boolean;;
+
 }
 
 /**

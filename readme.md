@@ -92,11 +92,15 @@ class Example extends Component {
  rippleCentered    | Ripple on base component should be centered   |  Boolean | false
  renderBase        | Render base component                         | Function | -
  renderAccessory   | Render text field accessory                   | Function | -
+ renderAccessoryLeft  | Should accessory be on left side           | Function/Boolean | false
+ renderAccessoryRight |  Should accessory be on right side         | Function/Boolean | false
  valueExtractor    | Extract value from item (args: item, index)   | Function | ({ value }) => value
  labelExtractor    | Extract label from item (args: item, index)   | Function | ({ label }) => label
  propsExtractor    | Extract props from item (args: item, index)   | Function | () => null
  onChangeText      | Selection callback (args: value, index, data) | Function | -
-
+ lineWidth         | Text field underline width                    |   Number | 0.5
+ tintColor         | Text field accent color                       |   String | rgb(0, 145, 234)
+ 
 Other [TextField][textfield], [TextInput][textinput] and [TouchableWithoutFeedback][touchable] properties will also work
 
 ## Methods

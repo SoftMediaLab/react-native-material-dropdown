@@ -145,8 +145,6 @@ export default class Dropdown extends PureComponent {
 
     renderBase: PropTypes.func,
     renderAccessory: PropTypes.func,
-    renderRightAccessory: PropTypes.func,
-    renderLeftAccessory: PropTypes.func,
 
     containerStyle: (ViewPropTypes || View.propTypes).style,
     overlayStyle: (ViewPropTypes || View.propTypes).style,
@@ -155,6 +153,11 @@ export default class Dropdown extends PureComponent {
     supportedOrientations: PropTypes.arrayOf(PropTypes.string),
 
     useNativeDriver: PropTypes.bool,
+
+    renderRightAccessory: PropTypes.func || PropTypes.bool,
+    renderLeftAccessory: PropTypes.func || PropTypes.bool,
+    tintColor: PropTypes.string,  // TextField only
+    lineWidth: PropTypes.string,  // TextField only
   };
 
   constructor(props) {
