@@ -45,7 +45,7 @@ export interface DropDownProps extends TouchableWithoutFeedbackProps {
   /** Animation duration (default: 225) */
   animationDuration?: number;
   /** Offset after label transition Animation (default: -25) */
-  animationOffser?: number;
+  animationOffset?: number;
   /** Set font size of dropdown items (default: 16) */
   fontSize?: number;
   /** Set font size of label (default: 12) */
