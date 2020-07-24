@@ -1,6 +1,6 @@
 {
   "name": "@softmedialab/react-native-material-dropdown",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "license": "BSD-3-Clause",
   "author": "Alexander Nazarov <n4kz@n4kz.com>",
   "description": "Material dropdown",
@@ -33,7 +33,7 @@
     "lint": "eslint src example/app.js"
   },
   "dependencies": {
-    "@softmedialab/react-native-material-textfield": "^0.16.3",
+    "@softmedialab/react-native-material-textfield": "^0.16.18",
     "prop-types": "^15.5.9",
     "react-native-material-buttons": "^0.5.0",
     "react-native-material-ripple": "^0.8.0"

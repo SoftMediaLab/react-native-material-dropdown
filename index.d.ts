@@ -44,6 +44,8 @@ export interface DropDownProps extends TouchableWithoutFeedbackProps {
   rippleDuration?: number;
   /** Animation duration (default: 225) */
   animationDuration?: number;
+  /** Offset after label transition Animation (default: -25) */
+  animationOffser?: number;
   /** Set font size of dropdown items (default: 16) */
   fontSize?: number;
   /** Set font size of label (default: 12) */
@@ -84,6 +86,8 @@ export interface DropDownProps extends TouchableWithoutFeedbackProps {
   tintColor?: string;
   /** Set textinput lineWidth */
   lineWidth?: number;
+  /** Deprecated, use animationOffset */
+  halfWidth?: boolean;
 
   /** Value extractor function. Extract value from item. */
   valueExtractor?(item: DropDownData, index: number): string;
