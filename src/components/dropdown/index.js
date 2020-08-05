@@ -154,11 +154,11 @@ export default class Dropdown extends PureComponent {
 
     useNativeDriver: PropTypes.bool,
 
-    renderRightAccessory: PropTypes.func || PropTypes.bool,
+    renderRightAccessory: PropTypes.oneOfType([PropTypes.func, PropTypes.bool]),
     renderLeftAccessory: PropTypes.func || PropTypes.bool,
-    tintColor: PropTypes.string,  // TextField only
-    lineWidth: PropTypes.string,  // TextField only
-    label: PropTypes.string // Textfield only
+    tintColor: PropTypes.string,
+    lineWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+    label: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   };
 
   constructor(props) {
